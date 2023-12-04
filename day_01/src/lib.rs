@@ -33,7 +33,6 @@ pub fn part2(lines:Vec<String>)->i32 {
 
       let mut line_val:String = "".to_string();
 
-
       for c in to_match.iter() {
         let matches:Vec<_> = line.match_indices(c).collect();
 
@@ -55,20 +54,15 @@ pub fn part2(lines:Vec<String>)->i32 {
       }
       
       line_val.push_str(start_val.as_str());
-      
+
       if !end_val.is_empty(){
         line_val.push_str(end_val.as_str());
       }else{
         line_val.push_str(start_val.as_str());
       }
       
-
-
       result_val += line_val.parse::<i32>().unwrap();
 
-      println!("Line original {}", line);
-      println!("Lineval {}", line_val);
-      println!(" ");
     } 
   }
 
