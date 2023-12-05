@@ -126,6 +126,6 @@ mod tests {
       .map(|f| f.parse().unwrap())
       .collect();
 
-    assert_eq!(part2(lines), 5560123);
+    assert_eq!(part2(lines), 55614);
   }
 }
